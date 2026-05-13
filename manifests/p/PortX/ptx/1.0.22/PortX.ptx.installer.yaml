@@ -1,0 +1,20 @@
+# Created using wingetcreate 1.12.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: PortX.ptx
+PackageVersion: 1.0.22
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: ptx.exe
+  PortableCommandAlias: ptx
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/portx-labs/ptx-cli/releases/download/v1.0.22/ptx-cli-windows-amd64.zip
+  InstallerSha256: ECA743B19FE50AF23F773BAB34F5C88FD3E88855D6F5CC07853BC7673710A43E
+- Architecture: arm64
+  InstallerUrl: https://github.com/portx-labs/ptx-cli/releases/download/v1.0.22/ptx-cli-windows-arm64.zip
+  InstallerSha256: 0DC85E21583F132FC170F53DFA3DBB85B12384727E3B0DCADB8D0627476A8C7A
+ManifestType: installer
+ManifestVersion: 1.12.0
+ReleaseDate: 2026-05-13
